@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --collectCoverage",
-    "test:watch": "jest --watchAll"
+    "test:watch": "jest --watchAll",
+    "postinstall": "npm run build"
   },
   "prepublish": "echo 'building!' && npm run build",
   "author": "leighbarnes",

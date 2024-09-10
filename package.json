@@ -6,9 +6,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
+    "postinstall": "tsc",
     "test": "jest --collectCoverage",
-    "test:watch": "jest --watchAll",
-    "postinstall": "npm run build"
+    "test:watch": "jest --watchAll"
   },
   "prepublish": "echo 'building!' && npm run build",
   "author": "leighbarnes",

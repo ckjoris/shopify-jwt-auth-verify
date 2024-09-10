@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "postinstall": "tsc",
+    "tsc": "tsc",
+    "postinstall": "npm run tsc",
     "test": "jest --collectCoverage",
     "test:watch": "jest --watchAll"
   },

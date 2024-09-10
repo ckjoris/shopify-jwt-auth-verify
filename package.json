@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "tsc": "tsc",
-    "postinstall": "./node_modules/.bin/tsc",
+    "postinstall": "npm run tsc || ./node_modules/.bin/tsc",
     "test": "jest --collectCoverage",
     "test:watch": "jest --watchAll"
   },
